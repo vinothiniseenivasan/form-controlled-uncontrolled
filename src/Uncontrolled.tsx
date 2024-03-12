@@ -11,21 +11,17 @@ const Uncontrolled: FC =() =>
        
      }
 
-     const inputRef = useRef(null);
+     
 
     return( 
         <form onSubmit = {handleSubmit}>
             <AutoFocusInput />
             <input type="text" 
-                ref = {inputRef}
+                 autoFocus
                 name = "firstName"
                 placeholder="firstName"
             />
-             <input type="text" 
-               
-                name = "lastName"
-                placeholder="lastName"
-            />
+            
             <button> Submit </button>
         </form>
     )
